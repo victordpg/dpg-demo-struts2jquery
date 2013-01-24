@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="jqueryPKG" namespace="/" extends="default">
+		<action name="showFileAction" class="com.dpg.action.ShowFileAction">
+			<result name="success" type="stream">
+				<param name="inputName">fileStream</param>
+				<param name="contentType">image/jpeg</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+
+		<action name="gridJson" class="com.dpg.action.GridJsonAction">
+			<result name="success" type="json" />
+		</action>
+		
+		<action name="gridEdit" class="com.dpg.action.GridEditAction">
+			<result name="success" type="json" />
+		</action>		
+	</package>
+</struts>
