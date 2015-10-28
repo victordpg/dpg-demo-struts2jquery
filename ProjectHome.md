@@ -1,0 +1,1 @@
+struts2 and jquery demonstration
